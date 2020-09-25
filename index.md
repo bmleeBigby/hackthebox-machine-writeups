@@ -31,7 +31,7 @@
 
 - [Magic]()
 
-- [Admirer]()
+- [Admirer](Admirer/)
 
 - [Blunder]()
 
