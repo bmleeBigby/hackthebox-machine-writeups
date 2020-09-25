@@ -77,6 +77,7 @@ Setelah berhasil login di FTP menggunakan kombinasi kredensial ftpuser:%n?4Wz}R$
 Kita mendapatkan 2 file, yaitu dump.sql dan html.tar.gz
 
 - dump.sql
+
 ```
 -- MySQL dump 10.16  Distrib 10.1.41-MariaDB, for debian-linux-gnu (x86_64)
 --
