@@ -1,23 +1,44 @@
-#Index Of /hackthebox-machine-writeups
+# Index Of /hackthebox-machine-writeups
 - [Wall]()
+
 - [Registry]()
+
 - [Mango]()
+
 - [Forest]()
+
 - [Obscurity]()
+
 - [OpenAdmin]()
+
 - [Traverxec]()
+
 - [Postman]()
+
 - [Sniper]()
+
 - [Resolute]()
+
 - [Nest]()
+
 - [Sauna]()
+
 - [Book]()
+
 - [Remote]()
+
 - [Traceback]()
+
 - [Magic]()
+
 - [Admirer]()
+
 - [Blunder]()
+
 - [ForwardSlash]()
+
 - [Quick]()
+
 - [SneakyMailer]()
+
 - [Cache]()
