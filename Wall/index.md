@@ -4,7 +4,7 @@
 
 Box Wall dengan operating system Linux, ini adalah box paling pertama yang saya berhasil solve !
 
-## Enumeration
+### Enumeration
 
 ```
 nmap -sC -sV 10.10.10.157
@@ -329,6 +329,8 @@ IFS=_;asd=chmod_+x_new;$asd
 IFS=_;asd=./new;$asd
 ```
 ![Image](img/10.jpg)
+
+### Root
 
 Mari kita menggunakan sebuah script open source bernama LinEnum.sh untuk melakukan enumerasi otomatis terhadap box ini. LinEnum.sh berfungsi sebagai tools untuk kita menjalankan enumerasi secara lengkap di local linux tersebut dengan tujuan mencari task atau process yang dapat digunakan untuk melakukan privelege escalation.
 

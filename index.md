@@ -1,7 +1,7 @@
 # Index Of /hackthebox-machine-writeups
 - [Wall](Wall/)
 
-- [Registry]()
+- [Registry](Registry/)
 
 - [Mango]()
 

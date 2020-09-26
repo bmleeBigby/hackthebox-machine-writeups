@@ -4,7 +4,7 @@
 
 Box Admirer dengan operating system Linux, menurut creatornya akan berisi banyak exploitasi berdasarkan existing CVE.
 
-## Enumeration
+### Enumeration
 
 Pertama penulis akan melakukan enumerasi terlebih dahulu dengan menggunakan nmap.
 
