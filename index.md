@@ -9,7 +9,7 @@
 
 - [Obscurity](Obscurity/)
 
-- [OpenAdmin]()
+- [OpenAdmin](OpenAdmin/)
 
 - [Traverxec]()
 

@@ -487,7 +487,7 @@ Mari kita login melalui SSH
 
 ![Image](img/11.jpg)
 
-user.txt : e4493782066b55fe2755708736ada2d7
+### Root
 
 Setelah menjalankan LinEnum.sh ada bagian yang menarik untuk ditindaklanjuti yaitu
 
