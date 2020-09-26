@@ -13,7 +13,7 @@
 
 - [Traverxec](Traverxec/)
 
-- [Postman]()
+- [Postman](Postman/)
 
 - [Sniper]()
 
@@ -36,6 +36,8 @@
 - [Blunder]()
 
 - [ForwardSlash]()
+
+- [Tabby]()
 
 - [Quick]()
 
