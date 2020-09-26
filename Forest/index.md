@@ -135,6 +135,8 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2019-11-26 22:13:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2019-11-26 22:15:07
 ```
 
+### User
+
 Kita mendapatkan beberapa nama user yang menarik, namun pada box kali ini, untuk melancarkan serangan pada user yang memiliki property ‘Do not require Kerberos preauthentication’ (UF_DONT_REQURE_PREAUTH). Kita akan menggunakan sebuah python script dari impacket yang bernama GetNPUsers.py dan mencoba mendapatkan TGT atau Ticket Granting Ticket dari user tersebut. Jika berhasil kita akan menerima sebuah hash yang dapat di crack menggunakan john atau hashcat dan merupakan password dari user tersebut.
 
 
@@ -149,11 +151,11 @@ Mari kita coba mendapatkan shell dengan menggunakan username svc-alfresco dan pa
 
 ![Image](img/5.jpg)
 
-### User
-
 Kita mendapatkan shell, mari kita mengambil user.txtnya
 
 ![Image](img/6.jpg)
+
+### Root
 
 Sekarang kita harus mendapatkan root.txt, kita sudah ada shell kedalam user svc-alfresco. Setelah melihat lihat forum banyak yang mereferensikan keras menggunakan bloodhound, sebuah tool untuk enumerasi active directory.
 
