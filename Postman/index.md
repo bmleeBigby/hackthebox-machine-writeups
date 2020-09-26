@@ -62,7 +62,7 @@ Pertama, penulis membuka service yang running di port 10000 yaitu webmin. Perlu 
 
 Penulis mencoba untuk mengakses service redis dengan menggunakan telnet. Penulis mencoba untuk mengeksploitasi service redis ini berdasarkan sebuah artikel yang di release oleh developer redisnya sendiri.
 
-https://packetstormsecurity.com/files/134200/Redis-Remote-Command-Execution.html
+[https://packetstormsecurity.com/files/134200/Redis-Remote-Command-Execution.html](https://packetstormsecurity.com/files/134200/Redis-Remote-Command-Execution.html)
 
 Kita melakukan pengecekan jika service redis ini perlu authentication terlebih dahulu atau tidak.
 
