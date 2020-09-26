@@ -1,5 +1,5 @@
 # Index Of /hackthebox-machine-writeups
-- [Wall]()
+- [Wall](Wall/)
 
 - [Registry]()
 
