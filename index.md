@@ -23,7 +23,7 @@
 
 - [Sauna](Sauna/)
 
-- [Book]()
+- [Book](Book/)
 
 - [Remote]()
 
