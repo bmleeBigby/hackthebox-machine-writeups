@@ -17,7 +17,7 @@
 
 - [Sniper](Sniper/)
 
-- [Resolute]()
+- [Resolute](Resolute/)
 
 - [Nest]()
 
