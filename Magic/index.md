@@ -1,6 +1,6 @@
 # Magic (Linux)
 
-![Image](img/1.PNG)
+![Image](img/1.png)
 
 HackTheBox Magic dengan operating system Linux
 
@@ -13,7 +13,7 @@ PORT   STATE SERVICE REASON         VERSION
 22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
 | ssh-hostkey: 
 |   2048 06:d4:89:bf:51:f7:fc:0c:f9:08:5e:97:63:64:8d:ca (RSA)
-| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQClcZO7AyXva0myXqRYz5xgxJ8ljSW1c6xX0vzHxP/Qy024qtSuDeQIRZGYsIR+kyje39aNw6HHxdz50XSBSEcauPLDWbIYLUMM+a0smh7/pRjfA+vqHxEp7e5l9H7Nbb1dzQesANxa1glKsEmKi1N8Yg0QHX0/FciFt1rdES9Y4b3I3gse2mSAfdNWn4ApnGnpy1tUbanZYdRtpvufqPWjzxUkFEnFIPrslKZoiQ+MLnp77DXfIm3PGjdhui0PBlkebTGbgo4+U44fniEweNJSkiaZW/CuKte0j/buSlBlnagzDl0meeT8EpBOPjk+F0v6Yr7heTuAZn75pO3l5RHX
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQClcZO7AyXva0myXqRYz5xgxJ8ljSW1c6xX0vzHxP/Qy024qtSuDeQIRZGYsIR+kyje39aNw6HHxdz50XSBSEcauPLDWbIYLUMM+a0smh7/pRjfA+vqHxEp7e5l9H7Nbb1dzQesANxa1glKsEmKi1N8Yg0QHX0/FciFt1rdES9Y4b3I3gse2mSAfdNWn4Apngnpy1tUbanZYdRtpvufqPWjzxUkFEnFIPrslKZoiQ+MLnp77DXfIm3PGjdhui0PBlkebTGbgo4+U44fniEweNJSkiaZW/CuKte0j/buSlBlnagzDl0meeT8EpBOPjk+F0v6Yr7heTuAZn75pO3l5RHX
 |   256 11:a6:92:98:ce:35:40:c7:29:09:4f:6c:2d:74:aa:66 (ECDSA)
 | ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOVyH7ButfnaTRJb0CdXzeCYFPEmm6nkSUd4d52dW6XybW9XjBanHE/FM4kZ7bJKFEOaLzF1lDizNQgiffGWWLQ=
 |   256 71:05:99:1f:a8:1b:14:d6:03:85:53:f8:78:8e:cb:88 (ED25519)
@@ -41,23 +41,23 @@ Kita bisa melihat 2 port yang terbuka yaitu port 22 (SSH) dan 80 (HTTP).
 
 Mari kita coba cek website yang sedang berjalan di port 80
 
-![Image](img/2.PNG)
+![Image](img/2.png)
 
 Sekilas tidak ada hal menarik di websitenya, namun di bagian kiri bawah terdapat tombol untuk menuju ke login page
 
-![Image](img/3.PNG)
+![Image](img/3.png)
 
 Penulis mencoba untuk menebak-nebak username dan password menggunakan kombinasi yang biasanya digunakan seperti admin:admin admin:password namun tidak ada yang berhasil, kemudian mencoba sekali lagi untuk menggunakan SQL Injection ternyata berhasil menggunakan teknil SQLi Tautology untuk bypass login.
 
-![Image](img/4.PNG)
+![Image](img/4.png)
 
 ### User
 
 Penulis menemukan tempat untuk melakukan file upload, mari kita coba untuk upload file .php untuk mendapatkan reverse shell
 
-![Image](img/5.PNG)
+![Image](img/5.png)
 
-Sayangnya tempat file upload tadi cuma memperbolehkan file format JPG, JPEG, dan PNG (file-file gambar saja)
+Sayangnya tempat file upload tadi cuma memperbolehkan file format JPG, JPEG, dan png (file-file gambar saja)
 
 Terdapat banyak teknik dalam melewati pengecekan filetype dan menyelundupkan php code untuk di execute kemudian, seperti mengganti file header, menggunakan double extension, menambahkan byte magic number dan lain lain.
 
@@ -73,7 +73,7 @@ Kenapa ada <pre> ? Biar lebih mudah dilihat output dari system nya, tidak tercam
 
 Upload rcev2.php.jpg
 
-![Image](img/6.PNG)
+![Image](img/6.png)
 
 Berhasil melakukan command ls, karena kita tahu RCE sudah berhasil dijalankan sekarang kita bisa menggunakan payload untuk membuat reverse shell kembali ke mesin lokal kita.
 
@@ -87,7 +87,7 @@ Berhasil mendapatkan reverse shell sebagai www-data
 
 Setelah masuk, penulis melakukan enumerasi dan menemukan db.php
 
-![Image](img/7.PNG)
+![Image](img/7.png)
 
 Dari file db.php tadi kita mendapatkan username dan password
 
@@ -105,11 +105,11 @@ mysqldump -u theseus -p --all-databases
 Enter password: iamkingtheseus
 ```
 
-![Image](img/8.PNG)
+![Image](img/8.png)
 
 Dapat creds admin:Th3s3usW4sK1ng untuk su di terminal
 
-![Image](img/9.PNG)
+![Image](img/9.png)
 
 ### Root
 

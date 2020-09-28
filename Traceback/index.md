@@ -50,7 +50,7 @@ Ditemukan luvit, yang ternyata semacam compiler untuk Bahasa lua
 https://luvit.io/
 ```
 
-![Image](img/6.png)
+![Image](img/6.PNG)
 
 Menjalankan sudo -l kita bisa mendapatkan sesuatu yang menarik
 
@@ -64,7 +64,7 @@ User webadmin may run the following commands on traceback:
 
 Dan menurut GTFOBins kita bisa menggunakan script lua tadi untuk menjalankan privilege escalation dari webadmin menjadi sysadmin
 
-![Image](img/6.png)
+![Image](img/7.PNG)
 
 ```
 Echo “os.execute(“/bin/sh”)” > privesc.lua

@@ -39,7 +39,7 @@ Menjalankan dirbuster sebentar kita akan mendapatkan hasil berupa
 
 index.php berupa sebuah login page
 
-![Image](img/3.png)
+![Image](img/3.PNG)
 
 Namun setelah dilihat page sourcenya kita bisa menemukan sebuah javascript yang menarik
 

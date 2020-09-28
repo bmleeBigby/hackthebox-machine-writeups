@@ -42,6 +42,8 @@ Namun dari dirbuster kita tahu bahwa ada directory admin yang ternyata sebuah lo
 
 ![Image](img/2.png)
 
+### User
+
 Penulis kemudian mencoba untuk melakukan bruteforce login panelnya menggunakan python script, namun ternyata Bludit memiliki fitur anti bruteforcing dengan menyimpan IP attempted login pada file log. Namun juga ada bypass nya dikarenakan IP yang disimpan disertakan dalam header request, sehingga merubah headernya setiap 10 request bisa mem-bypass fitur anti bruteforcenya.
 
 [https://github.com/rastating/rastating.github.io/blob/master/_posts/2019-10-05-bludit-brute-force-mitigation-bypass.md](https://github.com/rastating/rastating.github.io/blob/master/_posts/2019-10-05-bludit-brute-force-mitigation-bypass.md)
@@ -66,7 +68,7 @@ fergus:RolandDeschain
 
 Karena kita sudah bisa login ke admin panel sebagai fergus, kita bisa melakukan file upload dan mendapatkan reverse shell. Penulis menggunakan msfconsole untuk membuka session.
 
-# Root
+### Root
 
 Setelah melakukan enumerasi penulis melihat ada user kedua yang bernama hugo, dan setelah lebih banyak enumerasi lagi penulis berhasil menemukan hashed password login sebagai hugo di folder Bludit 3.10.x 
 
