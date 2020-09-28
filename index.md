@@ -25,22 +25,22 @@
 
 - [Book](Book/)
 
-- [Remote]()
+- [Remote](Remote/)
 
-- [Traceback]()
+- [Traceback](Traceback/)
 
-- [Magic]()
+- [Magic](Magic/)
 
 - [Admirer](Admirer/)
 
-- [Blunder]()
+- [Blunder](Blunder/)
 
-- [ForwardSlash]()
+- [ForwardSlash](ForwardSlash/)
 
-- [Tabby]()
+- [Tabby](Tabby/)
 
-- [Quick]()
+- [Quick](Quick/)
 
-- [SneakyMailer]()
+- [SneakyMailer](SneakyMailer/)
 
-- [Cache]()
+- [Cache](Cache/)
