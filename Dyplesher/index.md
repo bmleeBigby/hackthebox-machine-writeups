@@ -1,4 +1,4 @@
-# Tabby (Linux)
+# Dyplesher (Linux)
 
 ![Image](img/1.PNG)
 
